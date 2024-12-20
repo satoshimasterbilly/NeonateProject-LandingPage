@@ -1,10 +1,9 @@
 # NeonateProject-LandingPage
 Landing Page - my first project
-Project Title- Tutoring Business Landing Page
+# Title- Tutoring Business Landing Page
 Simple overview of use/purpose.
 
-Description
-Utilising HTML CSS and Javascript language was so much fun- particularly the landing Page containers-Keyboard-CSS styles- for anyone interested in starting an online coding tutoring business.
+# Utilising HTML CSS and Javascript language was so much fun- particularly the landing Page containers-Keyboard-CSS styles- for anyone interested in starting an online coding tutoring business.
 
 Getting Started
 Dependencies
