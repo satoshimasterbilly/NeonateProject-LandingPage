@@ -1,0 +1,232 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding:  0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #3333;
+    padding: 0.5rem 1rem 0.5rem;
+    border-radius: 50px;
+
+}
+
+/* Navigation */
+.navbar {
+    position: aligned center;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    background: linear-gradient(to right, #33ccff 0%, #ff99cc 100%);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.nav-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:#080808;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #0b0a0a;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #2563eb;
+}
+
+div {
+    background: linear-gradient(to right, #33ccff 0%, #ff99cc 100%);
+}
+
+.keyboard-container {
+    width: 80%;
+    max-width: 600px;
+    margin: 2rem auto 0;
+    padding: 0.5rem 1rem 0.5rem;
+    border-radius: 50px;
+    opacity: 0.9;
+    padding: 0.5rem 1rem 0.5rem;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    padding: 2rem;
+    color:#080808;
+}
+
+.hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0.5rem 1rem 0.5rem;
+    border-radius: 50px;
+    color:#080808;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem 1rem 0.5rem;
+    border-radius: 50px;
+    color: #080808;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    color: #080808;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.keyboard-container {
+    width: 80%;
+    max-width: 600px;
+    margin: 2rem auto 0;
+    opacity: 0.9;
+    padding: 0.5rem 1rem 0.5rem;
+    box-shadow: 0 4px 6px rgb(12, 0, 0);
+
+}
+
+.keyboard-container svg {
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 4px 6px rgba(14, 0, 0, 0.1));
+    padding: 0.5rem 1rem 0.5rem;
+    border-radius: 50px;
+}
+
+/* Make keyboard smaller on mobile */
+@media (max-width: 768px) {
+    .keyboard-container {
+        width: 90%;
+        max-width: 400px;
+    }
+}
+
+/* Features Section */
+.features {
+    padding: 5rem 2rem;
+    background-color: #fff;
+   text-align: center;
+   color: #080808;
+
+}
+
+.features-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 0.5rem 1rem 0.5rem;
+    border-radius: 50px;
+}
+
+.feature-card {
+    /* padding: 2rem;
+    border-radius: 10px; */
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgb(12, 0, 0);
+    transition: transform 0.3s ease;
+    padding: 0.5rem 1rem 0.5rem;
+    border-radius: 50px;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+/* CTA Section */
+.cta {
+
+    background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    color: rgb(12, 0, 0);
+    text-align: center;
+    padding: 0.5rem 1rem 0.5rem;
+    border-radius: 50px;
+}
+
+.cta-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0.5rem 1rem 0.5rem;
+    border-radius: 50px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: white;
+    color: #2563eb;
+    border: 2px solid #2563eb;
+}
+
+.btn-secondary:hover {
+    background-color: #2563eb;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+}
